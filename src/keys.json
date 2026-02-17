@@ -1,0 +1,20 @@
+{
+  "KazzTzy": {
+    "limit": 100,
+    "used": 0,
+    "owner": "Tzy",
+    "created": "2026-01-01"
+  },
+  "KazzPrivate": {
+    "limit": -1,
+    "used": 0,
+    "owner": "Admin",
+    "created": "2026-01-01"
+  },
+  "KazzGuest": {
+    "limit": 20,
+    "used": 0,
+    "owner": "Guest",
+    "created": "2026-01-01"
+  }
+}

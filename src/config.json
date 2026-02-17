@@ -1,0 +1,124 @@
+[
+  {
+    "name": "Dyronai Chat",
+    "endpoint": "/api/ai/dyronai",
+    "filename": "dyronai",
+    "method": "GET",
+    "category": "AI",
+    "description": "AI chat menggunakan Dyronai",
+    "params": [
+      { "name": "q", "required": true, "description": "Pertanyaan untuk AI" },
+      { "name": "apikey", "required": true, "description": "API Key untuk autentikasi" }
+    ]
+  },
+  {
+    "name": "Aoshi Chat",
+    "endpoint": "/api/ai/aoshi",
+    "filename": "Aoshi",
+    "method": "GET",
+    "category": "AI",
+    "description": "AI chat dengan karakter Aoshi",
+    "params": [
+      { "name": "q", "required": true, "description": "Pertanyaan untuk Aoshi" },
+      { "name": "session", "required": false, "description": "Session ID untuk memori percakapan" },
+      { "name": "apikey", "required": true, "description": "API Key untuk autentikasi" }
+    ]
+  },
+  {
+    "name": "Gemini AI",
+    "endpoint": "/api/ai/gemini",
+    "filename": "gemini",
+    "method": "GET",
+    "category": "AI",
+    "description": "Google Gemini AI",
+    "params": [
+      { "name": "q", "required": true, "description": "Pertanyaan untuk Gemini" },
+      { "name": "apikey", "required": true, "description": "API Key untuk autentikasi" }
+    ]
+  },
+  {
+    "name": "TikTok Downloader",
+    "endpoint": "/api/dl/tiktok",
+    "filename": "tiktok",
+    "method": "GET",
+    "category": "Downloader",
+    "description": "Download video TikTok tanpa watermark",
+    "params": [
+      { "name": "url", "required": true, "description": "URL TikTok" },
+      { "name": "apikey", "required": true, "description": "API Key untuk autentikasi" }
+    ]
+  },
+  {
+    "name": "YouTube Downloader",
+    "endpoint": "/api/dl/youtube",
+    "filename": "youtube",
+    "method": "GET",
+    "category": "Downloader",
+    "description": "Download audio/video YouTube",
+    "params": [
+      { "name": "url", "required": true, "description": "URL YouTube" },
+      { "name": "format", "required": false, "description": "Format: mp3, 144, 240, 360, 480, 720, 1080" },
+      { "name": "apikey", "required": true, "description": "API Key untuk autentikasi" }
+    ]
+  },
+  {
+    "name": "AIO Downloader",
+    "endpoint": "/api/dl/aio",
+    "filename": "aio",
+    "method": "GET",
+    "category": "Downloader",
+    "description": "All-in-one media downloader",
+    "params": [
+      { "name": "url", "required": true, "description": "URL media (TikTok, IG, FB, dll)" },
+      { "name": "apikey", "required": true, "description": "API Key untuk autentikasi" }
+    ]
+  },
+  {
+    "name": "Pinterest Search",
+    "endpoint": "/api/search/pinterest",
+    "filename": "pinterest",
+    "method": "GET",
+    "category": "Search",
+    "description": "Cari gambar di Pinterest",
+    "params": [
+      { "name": "q", "required": true, "description": "Kata kunci pencarian" },
+      { "name": "apikey", "required": true, "description": "API Key untuk autentikasi" }
+    ]
+  },
+  {
+    "name": "YouTube Search",
+    "endpoint": "/api/search/youtube",
+    "filename": "ytsearch",
+    "method": "GET",
+    "category": "Search",
+    "description": "Cari video di YouTube",
+    "params": [
+      { "name": "q", "required": true, "description": "Kata kunci pencarian" },
+      { "name": "apikey", "required": true, "description": "API Key untuk autentikasi" }
+    ]
+  },
+  {
+    "name": "Website Screenshot",
+    "endpoint": "/api/tools/screenshot",
+    "filename": "screenshot",
+    "method": "GET",
+    "category": "Tools",
+    "description": "Screenshot website",
+    "params": [
+      { "name": "url", "required": true, "description": "URL website yang ingin di-screenshot" },
+      { "name": "apikey", "required": true, "description": "API Key untuk autentikasi" }
+    ]
+  },
+  {
+    "name": "Text to Image",
+    "endpoint": "/api/tools/txt2img",
+    "filename": "txt2img",
+    "method": "GET",
+    "category": "Tools",
+    "description": "Generate gambar dari teks",
+    "params": [
+      { "name": "prompt", "required": true, "description": "Deskripsi gambar yang ingin dibuat" },
+      { "name": "apikey", "required": true, "description": "API Key untuk autentikasi" }
+    ]
+  }
+]

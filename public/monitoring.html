@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monitoring — API Dashboard</title>
+<link rel="stylesheet" href="monitoring.css">
+</head>
+<body>
+
+<div class="scanline"></div>
+
+<div class="topbar">
+  <div class="topbar-title">⎋ API Monitoring</div>
+  <div class="topbar-right">
+    <div class="live-dot"></div>
+    <div class="refresh-info" id="lastUpdate">--</div>
+    <a href="/" class="back-btn">← Back</a>
+  </div>
+</div>
+
+<div class="main">
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-label">Total Requests</div>
+      <div class="stat-value" id="totalReqs">0</div>
+      <div class="stat-sub" id="todayReqs">Today: 0</div>
+    </div>
+    <div class="stat-card accent2">
+      <div class="stat-label">Active Endpoints</div>
+      <div class="stat-value" id="activeEndpoints">0</div>
+      <div class="stat-sub">Registered in config</div>
+    </div>
+    <div class="stat-card accent3">
+      <div class="stat-label">Top Endpoint</div>
+      <div class="stat-value" id="topEndpoint" style="font-size:0.85rem;margin-top:4px;">—</div>
+      <div class="stat-sub" id="topEndpointCount">0 requests</div>
+    </div>
+    <div class="stat-card danger">
+      <div class="stat-label">Active Days</div>
+      <div class="stat-value" id="activeDays">0</div>
+      <div class="stat-sub">Days with activity</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="panel">
+      <div class="panel-head">
+        <div class="panel-title">Top Requests</div>
+        <div class="panel-count" id="epCount">0 endpoints</div>
+      </div>
+      <div class="endpoint-list" id="epList">
+        <div class="empty-state">No data yet</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <div class="panel-title">Daily Activity</div>
+        <div class="panel-count" id="dayRange">Last 7 days</div>
+      </div>
+      <div class="daily-chart">
+        <div class="chart-bars" id="chartBars"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="panel panel-full">
+      <div class="panel-head">
+        <div class="panel-title">API Keys Usage</div>
+        <div class="panel-count" id="keyCount">0 keys</div>
+      </div>
+      <table class="key-table">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Owner</th>
+            <th>Limit</th>
+            <th>Used</th>
+            <th>Remaining</th>
+            <th>Usage</th>
+          </tr>
+        </thead>
+        <tbody id="keyTable">
+          <tr><td colspan="6" style="color:#444;padding:30px;text-align:center">Loading...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<script src="monitoring.js"></script>
+</body>
+</html>

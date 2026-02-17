@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>API Playground</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanline"></div>
+
+<div class="container">
+
+  <div class="header">
+    <div class="avatar-wrap">
+      <img src="https://raw.githubusercontent.com/whatsapp-media/whatsapp-media/main/uploads/1771203946684_undefined.jpg" alt="Avatar">
+    </div>
+    <div class="header-text">
+      <h1>Kyzo <span>Yamada</span></h1>
+      <div class="header-meta">
+        <span class="meta-tag live">API Active</span>
+        <span class="meta-tag" id="totalBadge">— requests</span>
+        <span class="meta-tag" id="apiBadge">— endpoints</span>
+        <a href="monitoring.html" class="meta-tag" style="text-decoration:none;cursor:pointer;">⎋ Monitoring</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Endpoints</div>
+
+  <div class="categories" id="catBar">
+    <button class="cat-btn active" data-cat="all">All</button>
+  </div>
+
+  <div class="drawers" id="drawers">
+    <div class="no-apis">Loading endpoints...</div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-left">© 2026 <span>Kyzo Yamada APIs</span> — All rights reserved</div>
+    <div class="socials">
+      <a class="social-link" href="https://wa.me/6283191939584" target="_blank" title="WhatsApp">W</a>
+      <a class="social-link" href="https://t.me/Zionn2009" target="_blank" title="Telegram">T</a>
+      <a class="social-link" href="https://www.youtube.com/@kyzocode2.009" target="_blank" title="YouTube">Y</a>
+      <a class="social-link" href="https://www.instagram.com/ryzz2.009" target="_blank" title="Instagram">I</a>
+    </div>
+  </div>
+</div>
+
+<div class="loading-overlay" id="loader">
+  <div class="loader-bar"></div>
+  <div class="loader-text">FETCHING...</div>
+</div>
+
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-title" id="modalTitle">Response</div>
+      <button class="modal-close-btn" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-code" id="modalCode"></div>
+    <div class="modal-actions">
+      <button class="btn-sm" onclick="copyURL()">Copy URL</button>
+      <button class="btn-sm" onclick="copyJSON()">Copy JSON</button>
+      <button class="btn-sm" onclick="openFull()">Open Full</button>
+      <button class="btn-sm" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
